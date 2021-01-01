@@ -1,1 +1,1 @@
-cache_path = 'C:\Users\Furizal\sencha-workstation\myKos/build/.sass-cache'
+cache_path = 'C:\Users\Furizal\sencha-workstation\ALL-clone\mykos/build/.sass-cache'
