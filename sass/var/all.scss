@@ -1,0 +1,11 @@
+/*
+ * This is is imported by virtue of "sass.var" in "app.json".
+ */
+
+$enable-font-awesome: dynamic(true);
+
+$base-color: lighten(#5900ff,10%);
+$background-color: lighten(blue,58%);
+$font-family: dynamic(Helvetica);
+$font-size : 2px;
+$checkboxfield-checkbox-color: lighten(#050866,10%);
