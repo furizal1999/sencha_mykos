@@ -38,9 +38,15 @@ Ext.define('myKos.util.Globals',{
       var params = {};
       params.user = 'furizal';
       options.params = params;
-      var ft = new FileTransfer();
-      ft.upload(fileURL, uri, globalUtils.uploadSuccess, globalUtils.uploadError, options);
-    
+
+      // var ft = new FileTransfer();
+      // ft.upload(fileURL, uri, globalUtils.uploadSuccess, globalUtils.uploadError, options);
+
+      var fd = new FormData();
+      fd.append("file", mediaFiles);
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "http://localhost/php/upload.php");
+      xhr.send(fd);
     }
   },
   captureError: function(error){
