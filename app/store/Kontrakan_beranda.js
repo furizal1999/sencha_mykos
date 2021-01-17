@@ -13,7 +13,7 @@ Ext.define('myKos.store.Kontrakan_beranda', {
     proxy: {
         type: 'jsonp',
         api: {
-            read: "http://localhost/myKos/kos_beranda.php",
+            read:  myKos.util.Globals.getPhppath() +'/kos_beranda.php',
             // create: "http://localhost/myKos/daftar_akun.php"
 
         },

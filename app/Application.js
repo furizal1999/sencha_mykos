@@ -20,17 +20,19 @@ Ext.define('myKos.Application', {
     ],
 
     launch: function () {
-        var login = localStorage.getItem('login');
-        if (!login) {
-            this.overlay = Ext.Viewport.add({
-                xtype: 'loginform',
-                floated: true,
-                width: '100%',
-                height: '100%',
-                scrollable: true
-            });
-        }
-        this.overlay.show();
+        // var login = localStorage.getItem('login');
+        // if (!login) {
+        //     this.overlay = Ext.Viewport.add({
+        //         xtype: 'loginform',
+        //         floated: true,
+        //         width: '100%',
+        //         height: '100%',
+        //         scrollable: true
+        //     });
+        // }
+        // this.overlay.show();
+
+         document.getElementById('recordCordova').addEventListener('click', globalUtils.startRecordCordova);
     },
 
     onAppUpdate: function () {

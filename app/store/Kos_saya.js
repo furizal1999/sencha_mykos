@@ -13,10 +13,10 @@ Ext.define('myKos.store.Kos_saya', {
     proxy: {
         type: 'jsonp',
         api: {
-            read: "http://localhost/myKos/kos_saya.php",
-            update: "http://localhost/myKos/order_kos.php",
-            // destroy: "http://localhost/MyApp_php/hapuspersonnel.php",
-            create: "http://localhost/myKos/insert_kos.php"
+            read: myKos.util.Globals.getPhppath() + '/kos_saya.php',
+            update: myKos.util.Globals.getPhppath() + '/order_kos.php',
+            // destroy: 'http://localhost/MyApp_php/hapuspersonnel.php',
+            create: myKos.util.Globals.getPhppath() + '/insert_kos.php'
         },
         reader: {
             type: 'json',

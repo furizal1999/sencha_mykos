@@ -84,6 +84,14 @@ Ext.define('myKos.view.form.AkunSaya', {
             },
             items: [
                 {
+                    label: 'Unggah Audio',
+                    html: 'Rekam Pengucapan'+
+                    '<div id="controls">'+
+                        '<button id="recordCordova">Mulai Merekam Pengucapan</button>'+
+                    '</div><br>'+
+                    '<div id="recordingInfo"></div><br>'
+                },
+                {
                     xtype: 'textfield',
                     name: 'namakos',
                     id: 'nama_user_profil',

@@ -13,7 +13,7 @@ Ext.define('myKos.store.Login', {
     proxy: {
         type: 'jsonp',
         api: {
-            read: "http://localhost/myKos/login.php"
+            read: myKos.util.Globals.getPhppath() + '/login.php'
         },
         reader: {
             type: 'json',

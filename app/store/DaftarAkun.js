@@ -16,7 +16,7 @@ Ext.define('myKos.store.DaftarAkun', {
             // read: "http://localhost/myKos/kos_saya.php",
             // update: "http://localhost/myKos/kos_saya.php",
             // destroy: "http://localhost/myKos/kos_saya.php",
-            create: "http://localhost/myKos/daftar_akun.php"
+            create: myKos.util.Globals.getPhppath() + '/daftar_akun.php'
         },
         reader: {
             type: 'json',

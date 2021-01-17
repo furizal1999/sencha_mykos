@@ -13,8 +13,8 @@ Ext.define('myKos.store.Kos_beranda', {
     proxy: {
         type: 'jsonp',
         api: {
-            read: "http://localhost/myKos/kos_beranda.php",
-            update: "http://localhost/myKos/order_kos.php"
+            read: globalUtils.getPhppath()+'/kos_beranda.php',
+            update: myKos.util.Globals.getPhppath() + '/order_kos.php'
         },
         reader: {
             type: 'json',
